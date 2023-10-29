@@ -22,7 +22,7 @@
 
   <div class="card">
     <div class="card-body register-card-body">
-      <p class="login-box-msg">Register a new membership</p>
+      <p class="login-box-msg">Registrate </p>
             @if(session('error'))
               <div class="alert alert-danger text-light text-center m-2" role="alert">
                 {{ session('error') }}
@@ -88,15 +88,15 @@
         <p>- OR -</p>
         <a href="#" class="btn btn-block btn-primary">
           <i class="fab fa-facebook mr-2"></i>
-          Sign up using Facebook
+          Regístrate usando Facebook
         </a>
         <a href="#" class="btn btn-block btn-danger">
           <i class="fab fa-google-plus mr-2"></i>
-          Sign up using Google+
+          Regístrate usando Google+
         </a>
       </div>
 
-      <a href="{{ route('login') }}" class="text-center">I already have a membership</a>
+      <a href="{{ route('login') }}" class="text-center">login</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
