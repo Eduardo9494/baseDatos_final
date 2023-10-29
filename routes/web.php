@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,9 @@ Route::post('/register', [AuthController::class, 'postRegister'])->name('registe
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => 'auth'], function(){
+    Route::group(['prefix' => 'product', 'as' => 'product.'], function(){
+        Route::get('/', [ProductController::class, 'index'])->name('index');
+    });
 
     Route::group(['prefix' => 'profile', 'as' => 'profile.'], function(){
         Route::get('/', [ProfileController::class, 'index'])->name('index');
