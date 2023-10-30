@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ProductController extends Controller
 {
     public function index(){
-        return view('pages.products');
+        $products = Product::orderBy('sold', 'ASC');
+        $products =  $products->orderBy('name', 'ASC')->get();
+
+        return view('pages.products', compact('products'));
     }
 }

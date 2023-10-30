@@ -6,12 +6,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Profile</h1>
+            <h1>Perfil</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">User Profile</li>
+              <li class="breadcrumb-item active">User Perfil</li>
             </ol>
           </div>
         </div>
@@ -39,17 +39,17 @@
  
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
-                    <b>Followers</b> <a class="float-right">1,322</a>
+                    <b>Seguidores</b> <a class="float-right">1,322</a>
                   </li>
                   <li class="list-group-item">
-                    <b>Following</b> <a class="float-right">543</a>
+                    <b>Siguiendo</b> <a class="float-right">543</a>
                   </li>
                   <li class="list-group-item">
-                    <b>Friends</b> <a class="float-right">13,287</a>
+                    <b>Amigos</b> <a class="float-right">13,287</a>
                   </li>
                 </ul>
  
-                <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+                <a href="#" class="btn btn-primary btn-block"><b>Seguir</b></a>
               </div>
               <!-- /.card-body -->
             </div>
@@ -58,25 +58,25 @@
             <!-- About Me Box -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">About Me</h3>
+                <h3 class="card-title">Acerca de mí</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <strong><i class="fas fa-book mr-1"></i> Education</strong>
+                <strong><i class="fas fa-book mr-1"></i> Educación</strong>
  
                 <p class="text-muted">
-                  B.S. in Computer Science from the University of Tennessee at Knoxville
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, adipisci?
                 </p>
  
                 <hr>
  
-                <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+                <strong><i class="fas fa-map-marker-alt mr-1"></i> Ubicación</strong>
  
-                <p class="text-muted">Malibu, California</p>
+                <p class="text-muted">Lorem ipsum , dolor sit amet.</p>
  
                 <hr>
  
-                <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+                <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades</strong>
  
                 <p class="text-muted">
                   <span class="tag tag-danger">UI Design</span>
@@ -88,7 +88,7 @@
  
                 <hr>
  
-                <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
+                <strong><i class="far fa-file-alt mr-1"></i> Notas</strong>
  
                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
               </div>
@@ -101,9 +101,9 @@
             <div class="card">
               <div class="card-header p-2">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Activity</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Actividad</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Línea de tiempo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Ajustes</a></li>
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
@@ -144,23 +144,23 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputSkills" class="col-sm-2 col-form-label">Skills</label>
+                        <label for="inputSkills" class="col-sm-2 col-form-label">Habilidades</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                          <input type="text" class="form-control" id="inputSkills" placeholder="Habilidades">
                         </div>
                       </div>
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
                           <div class="checkbox">
                             <label>
-                              <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                              <input type="checkbox"> Estoy de acuerdo con los <a href="#">Términos y condiciones</a>
                             </label>
                           </div>
                         </div>
                       </div>
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
-                          <button type="submit" class="btn btn-danger">Submit</button>
+                          <button type="submit" class="btn btn-danger">Enviar</button>
                         </div>
                       </div>
                     </form>
