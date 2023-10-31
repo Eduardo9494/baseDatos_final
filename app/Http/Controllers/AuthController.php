@@ -50,7 +50,7 @@ class AuthController extends Controller
 
         Auth::attempt($credentials);
          
-        return redirect()->route('profile.index')->with('success', 'Congratulations, your account can be used! After exiting, Login using User ID and Password');
+        return redirect()->route('profile.index')->with('success', '¡Felicitaciones, su cuenta puede ser utilizada! Después de salir, inicie sesión con ID de usuario y contraseña');
 
     }
 

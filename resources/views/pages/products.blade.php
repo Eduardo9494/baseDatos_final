@@ -43,7 +43,7 @@
                         <div class="numbers">
                         <small class="d-flex align-items-center text-capitalize">
                             <i class="ri-store-2-fill me-1"></i> 
-                            <span>kkkkkkkkkkkk</span>
+                            <span>{{ $product->seller->name }}</span>
                         </small>
                         <p class="mb-0 text-capitalize font-weight-bold">{{ $product->name }}</p>
                         <h5 class="font-weight-bolder mb-0">
@@ -72,7 +72,7 @@
             <div class="col-12">
             <div class="card">
                 <div class="card-body text-center p-3">
-                <h4>Product Not Available</h4>
+                <h4>Productos No Disponibles</h4>
                 </div>
             </div>
             </div>

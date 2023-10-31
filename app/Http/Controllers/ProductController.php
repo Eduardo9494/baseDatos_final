@@ -13,4 +13,8 @@ class ProductController extends Controller
 
         return view('pages.products', compact('products'));
     }
+
+    public function create(){
+        return view('pages.create');
+    }
 }
