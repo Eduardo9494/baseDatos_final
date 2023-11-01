@@ -40,4 +40,6 @@ class ProductController extends Controller
 
         return back()->with('success', 'Su producto ha sido creado exitosamente. Espere hasta que se venda su producto.');
     }
+
+    
 }
