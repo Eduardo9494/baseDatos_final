@@ -52,7 +52,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
  
         if($product->user_id == Auth::user()->id){
-            return back()->with('error', "Compra fallida, no puedes comprar tu propio producto");
+            return back()->with('error', "Compra fallida, no puedes comprar tu propio producto  ");
         }
 
         return back()->with('success', 'producto ha sido comprado exitosamente');
