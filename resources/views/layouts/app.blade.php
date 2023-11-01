@@ -78,13 +78,13 @@
               <li class="nav-item">
                 <a href="{{ route('product.index') }}" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Producto</p>
+                  <p>Productos</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ route('product.create') }}" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Agregar producto</p>
+                  <p>Agregar productos</p>
                 </a>
               </li>
               <li class="nav-item">
