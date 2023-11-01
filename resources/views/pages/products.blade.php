@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-4 text-end">
                         @if(!$product->sold)
-                        <a href="" class="btn bg-gradient-primary">Buy</a>
+                        <a href="{{ route('product.buy', $product->id) }}" class="btn bg-gradient-primary">Comprar</a>
                         @else
                         <span class="btn bg-gradient-danger">Vendido</span>
                         @endif

@@ -48,6 +48,16 @@ class ProductController extends Controller
         return back()->with('success', 'Su producto ha sido creado exitosamente. Espere hasta que se venda su producto.');
     }
 
+    public function buy($id){
+        $product = Product::findOrFail($id);
+ 
+        if($product->user_id == Auth::user()->id){
+            return back()->with('error', "Compra fallida, no puedes comprar tu propio producto");
+        }
+
+        return back()->with('success', 'producto ha sido comprado exitosamente');
+    }
+
     public function my(){
         $products = Product::where('user_id', Auth::user()->id)->orderBy('sold', 'asc')->get();
         return view('pages.my', compact('products'));
