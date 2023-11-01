@@ -24,7 +24,12 @@
         <div class="row">
         <div class="col-md-4">
             <div class="d-flex align-items-center justify-content-around">
-            <p class="mb-0">Sort By</p>
+            <p class="mb-0">Ornedado_por::</p>
+            <select class="form-control w-75" id="sortBy">
+                <option value=""  {{ request()->sort == '' ? 'selected' : '' }}>El último</option>
+                <option value="asc" {{ request()->sort == 'asc' ? 'selected' : '' }}>Ascendente</option>
+                <option value="desc" {{ request()->sort == 'desc' ? 'selected' : '' }}>Descendente</option>
+            </select>
             </div>
         </div>
         </div>
@@ -79,6 +84,15 @@
         @endif
         </div>
     </div>
+    <script>
+    const sortBy = document.getElementById('sortBy')
+    sortBy.addEventListener('change', function() {
+      const sort = 'sort=' + this.value + ''
+      let url = "{{ route('product.index', ':sort') }}"
+      url = url.replace(':sort', sort)
+      window.location.href = url
+    })
+  </script>
     </section>
     <!-- /.content -->
 @endsection
