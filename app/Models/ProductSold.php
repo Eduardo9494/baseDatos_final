@@ -9,7 +9,8 @@ class ProductSold extends Model
 {
     use HasFactory;
 
-    protected $table = 'product_solds';
+    protected $table = 'product_solds'; 
 
-    protected $fillable = ['product_id', 'buyer_id'];
+    protected $fillable = ['product_id', 'buyer_id']; 
 }
+ 
