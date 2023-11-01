@@ -42,6 +42,7 @@ class ProductController extends Controller
     }
 
     public function my(){
-        return view('pages.my');
+        $products = Product::where('user_id', Auth::user()->id)->orderBy('sold', 'asc')->get();
+        return view('pages.my', compact('products'));
     }
 }
