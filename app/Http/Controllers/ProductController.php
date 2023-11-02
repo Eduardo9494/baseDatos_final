@@ -4,19 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
-use App\Models\ProductSold;
+use App\Models\ProductSold; 
 use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
-    public function index(Request $request){
-        $products = Product::orderBy('sold', 'ASC');
-        if($request->sort == 'asc'){
-            $products =  $products->orderBy('name', 'ASC')->get();
-        }else if($request->sort == 'desc'){
-            $products =  $products->orderBy('name', 'DESC')->get();
+    public function index(Request $request){ 
+        $products = Product::orderBy('sold', 'ASC'); 
+        if($request->sort == 'asc'){ 
+            $products =  $products->orderBy('name', 'ASC')->get(); 
+        }else if($request->sort == 'desc'){ 
+            $products =  $products->orderBy('name', 'DESC')->get(); 
         }else{
-            $products =  $products->orderBy('created_at', 'DESC')->orderBy('updated_at', 'DESC')->get();
+            $products =  $products->orderBy('created_at', 'DESC')->orderBy('updated_at', 'DESC')->get(); 
         }
 
         return view('pages.products', compact('products'));
