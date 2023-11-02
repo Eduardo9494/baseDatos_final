@@ -12,5 +12,9 @@ class ProductSold extends Model
     protected $table = 'product_solds'; 
 
     protected $fillable = ['product_id', 'buyer_id']; 
+
+    public function detail(){
+        return $this->belongsTo(Product::class, 'product_id');
+    }
 }
  
