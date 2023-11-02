@@ -21,7 +21,6 @@
     <section class="content">
   <div class="container-fluid">
     <div class="row">
-    <section class="content">
   <div class="container-fluid">
     <div class="row">
       @if($products->count() > 0)
@@ -46,7 +45,7 @@
                     @if($product->sold)
                       <span class="btn bg-gradient-danger">Sold</span>
                     @else
-                      <span class="btn bg-gradient-success">Active</span>
+                      <span class="btn bg-gradient-success">Activo</span>
                     @endif
                   </div>
                 </div>

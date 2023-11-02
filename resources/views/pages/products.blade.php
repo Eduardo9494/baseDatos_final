@@ -33,8 +33,8 @@
             </div>
         </div>
         </div>
-        <div class="row mt-4">
 
+        <div class="row mt-4">
         @if($products->count() > 0)
             @foreach($products as $product)
             <div class="col-xl-3 col-sm- mb-4">
@@ -68,11 +68,10 @@
                 </div>
                 </div>
             </div>
-                </div>
-            </div>
+            
             @endforeach
 
-            
+
         @else
             <div class="col-12">
             <div class="card">
