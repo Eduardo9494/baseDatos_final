@@ -10,4 +10,8 @@ class ProfileController extends Controller
     public function index(){
         return view('pages.profile');
     }
+
+    public function purchase(){
+        return view('pages.purchase');
+    }
 }

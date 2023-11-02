@@ -55,6 +55,15 @@ class ProductController extends Controller
             return back()->with('error', "Compra fallida, no puedes comprar tu propio producto  ");
         }
 
+        ProductSold::create([
+            'product_id' => $product->id,
+            'buyer_id' => Auth::user()->id,
+        ]);
+        
+        $product->update([
+            'sold' => true,
+        ]);
+
         return back()->with('success', 'producto ha sido comprado exitosamente');
     }
 

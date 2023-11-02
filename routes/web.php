@@ -37,5 +37,6 @@ Route::group(['middleware' => 'auth'], function(){
 
     Route::group(['prefix' => 'profile', 'as' => 'profile.'], function(){
         Route::get('/', [ProfileController::class, 'index'])->name('index');
+        Route::get('/purchase', [ProfileController::class, 'purchase'])->name('purchase');
     });
 });
