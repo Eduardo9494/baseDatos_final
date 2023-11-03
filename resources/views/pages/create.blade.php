@@ -6,7 +6,7 @@
       <div class="col-12 col-lg-6">
         <div class="card">
           <div class="card-body p-3">
-            <h5>Agregar productos</h5> 
+            <h5>Agregar productos</h5>  
             <hr>
             <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
               @csrf
